@@ -12,8 +12,8 @@
 <body class="bg-zinc-900 box-border p-0 m-0 overflow-x-hidden">
 
     <!-- NAV BAR  || POSITIONED ON THE TOP -->
-    <div class="flex justify-center sticky top-0 ">
-        <div class=" w-[80%] uppercase  text-xs  text-neutral-50 font-thin flex   gap-[150px] border-gray-700 p-[20px] border-[1px]  bg-zinc-900 ">
+    <div  id="nav_bar" class="flex justify-center sticky top-0 z-[20]">
+        <div id="nav_bar1" class=" w-[80%] uppercase  text-xs  text-neutral-50 font-thin flex   gap-[150px] border-gray-700 p-[20px] border-[1px]  bg-zinc-900 ">
             <div class="font-sans tracking-[3px] hover:text-yellow-600 hover:cursor-pointer">Chaudhary.</div>
             <div class="font-sans tracking-[3px] hover:text-yellow-600 hover:cursor-pointer">Intro</div>
             <div class="font-sans tracking-[3px] hover:text-yellow-600 hover:cursor-pointer">About</div>
@@ -23,7 +23,7 @@
     </div>
 
     <!-- INTRO -->
-    <div class="ml-[130px] mt-[80px]  ">
+    <div id="intro" class="ml-[130px] mt-[80px]  ">
         <div class=" flex h-full gap-2">
             <div class="flex justify-center items-center h-[20px] w-[50px] py-[4px]"><hr class=" tranfrom translate-y-1 w-full"></div>
             <div class=" flex uppercase text-yellow-600 text-l tracking-[5px] text-end w-[170px]">hello world</div>
@@ -34,7 +34,7 @@
             </div>
         </div>
         <div class="flex list-none justify-between w-[450px] text-xs tracking-[3px] text-gray-700 rotate-[-90deg] absolute top-[400px] left-[980px]">
-            <li class="hover:text-neutral-50">FACEBOOK</li>
+            <a class="hover:text-neutral-50" href="https://github.com/yc8545" target="_blank">GIT-HUB</a>
             <a class="hover:text-neutral-50" href="https://www.linkedin.com/in/yashika-chaudhary-16782428b/" target="_blank">LINKED-IN</a>
             <li class="hover:text-neutral-50">TWITTER</li>
             <a class="hover:text-neutral-50" href="https://www.instagram.com/fameika.665314/" target="_blank">INSTAGRAM</a>
@@ -42,14 +42,14 @@
     </div>
 
     <!-- ABOUT -->
-    <div class="mt-[400px] flex">
+    <div id="about" class="mt-[400px] flex">
         <div class="border-gray-700 border-[1px] p-[5px]">
             <div class="w-[700px] h-[700px] opacity-[7] overflow-hidden cover">
                 <img src="pic.jpg" alt="">
             </div>
         </div>
         
-        <div class="flex flex-col gap-4 mt-[150px] relative right-[100px] w-[700px] ">
+        <div class="flex flex-col gap-4 mt-[150px] relative right-[100px] w-[700px] z-[10]">
             <div class=" flex gap-2">
                 <div class="flex justify-center items-center h-[20px] w-[50px] py-[4px]"><hr class=" tranfrom translate-y-1 w-full"></div>
                 <div class="uppercase text-yellow-600 text-xl tracking-[5px] text-start w-[170px]">about</div>
@@ -121,49 +121,20 @@
     <div class="flex m-[100px] "> <!-- main box -->
         <div class="flex flex-col "> <!-- continer for coloum 1 -->
             <div class="flex gap-[40px] m-[50px]"> 
-                <div><img src="Screenshot (4).png"  width="100px" height="100px" ></div>
-                <div style="border-top: 1px gray solid;">
+                <div class="bg-neutral-50 rounded-xl">
+                    <svg  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                        <path d="M 44.527344 34.75 C 43.449219 37.144531 42.929688 38.214844 41.542969 40.328125 C 39.601563 43.28125 36.863281 46.96875 33.480469 46.992188 C 30.46875 47.019531 29.691406 45.027344 25.601563 45.0625 C 21.515625 45.082031 20.664063 47.03125 17.648438 47 C 14.261719 46.96875 11.671875 43.648438 9.730469 40.699219 C 4.300781 32.429688 3.726563 22.734375 7.082031 17.578125 C 9.457031 13.921875 13.210938 11.773438 16.738281 11.773438 C 20.332031 11.773438 22.589844 13.746094 25.558594 13.746094 C 28.441406 13.746094 30.195313 11.769531 34.351563 11.769531 C 37.492188 11.769531 40.8125 13.480469 43.1875 16.433594 C 35.421875 20.691406 36.683594 31.78125 44.527344 34.75 Z M 31.195313 8.46875 C 32.707031 6.527344 33.855469 3.789063 33.4375 1 C 30.972656 1.167969 28.089844 2.742188 26.40625 4.78125 C 24.878906 6.640625 23.613281 9.398438 24.105469 12.066406 C 26.796875 12.152344 29.582031 10.546875 31.195313 8.46875 Z"></path>
+                        </svg>
+                </div>
+                <div style="border-top: 1px gray solid; ">
                     <p class="text-gray-500 text-l  uppercase ">website</p>
                     <a class="text-neutral-50 text-4xl hover:text-yellow-600 uppercase text-bold" target="_blank"  href="apple.html">Apple clone</a>
                 </div>
             </div>
-            <div class="flex gap-[40px] m-[50px]"> 
-                <div><img src="Screenshot (4).png"  width="100px" height="100px" ></div>
-                <div style="border-top: 1px gray solid;">
-                    <p class="text-gray-500 text-l  uppercase ">website</p>
-                    <a class="text-neutral-50 text-4xl hover:text-yellow-600 uppercase text-bold" target="_blank"  href="apple.html">Apple clone</a>
-                </div>
-            </div>
-            <div class="flex gap-[40px] m-[50px]"> 
-                <div><img src="Screenshot (4).png"  width="100px" height="100px" ></div>
-                <div style="border-top: 1px gray solid;">
-                    <p class="text-gray-500 text-l  uppercase ">website</p>
-                    <a class="text-neutral-50 text-4xl hover:text-yellow-600 uppercase text-bold" target="_blank"  href="apple.html">Apple clone</a>
-                </div>
-            </div>
+            <!-- more work -->
         </div>
         <div class="flex flex-col "> <!-- continer for coloum 2 -->
-            <div class="flex gap-[40px] m-[50px]"> 
-                <div><img src="Screenshot (4).png"  width="100px" height="100px" ></div>
-                <div style="border-top: 1px gray solid;">
-                    <p class="text-gray-500 text-l  uppercase ">website</p>
-                    <a class="text-neutral-50 text-4xl hover:text-yellow-600 uppercase text-bold" target="_blank"  href="apple.html">Apple clone</a>
-                </div>
-            </div>
-            <div class="flex gap-[40px] m-[50px]"> 
-                <div><img src="Screenshot (4).png"  width="100px" height="100px" ></div>
-                <div style="border-top: 1px gray solid;">
-                    <p class="text-gray-500 text-l  uppercase ">website</p>
-                    <a class="text-neutral-50 text-4xl hover:text-yellow-600 uppercase text-bold" target="_blank"  href="apple.html">Apple clone</a>
-                </div>
-            </div>
-            <div class="flex gap-[40px] m-[50px]"> 
-                <div><img src="Screenshot (4).png"  width="100px" height="100px" ></div>
-                <div style="border-top: 1px gray solid;">
-                    <p class="text-gray-500 text-l  uppercase ">website</p>
-                    <a class="text-neutral-50 text-4xl hover:text-yellow-600 uppercase text-bold" target="_blank"  href="apple.html">Apple clone</a>
-                </div>
-            </div>
+            <!-- more work -->
         </div>
     </div>
 
@@ -196,62 +167,26 @@
                 </div>
             </div >
             <div class="basis-[70%]"> <!-- lower -->
-                <p class="text-l text-gray-500 hover:text-gray-400 ">mentor 
-                    hardworking 
-                    intelligent 
-                    quick thoughts ( mtlb sochne shakti acchi h )
-                    caring 
-                    .</p>
+                <p class="text-l text-gray-500 hover:text-gray-400 ">Very hardworking girl with extraordinary talent with immersive skills, quick thought process and ambitious to her goals. Have very good coding skills, at very excellent in work, very good developer. I enjoy the most when i work with her very responsive and help me with every queries and my doubt.</p>
             </div>
         </div>
         <!-- CARD 3 -->
         <div class=" flex flex-col p-[30px] border-gray-700 border-[1px] min-w-[400px] min-h-[300px] "> <!-- card -->
             <div class="flex gap-[10px] basis-[30%] "> <!-- upper -->
-                <div class="rounded-full w-[60px] h-[60px] bg-[url('annanya.jpg')] bg-cover"> <!-- picture -->
+                <div class="rounded-full w-[60px] h-[60px] bg-[url('Kunal.jpg')] bg-cover"> <!-- picture -->
                 </div>
                 <div> <!-- about person -->
-                    <p class="text-xl tracking-[1px] hover:tracking-[3px] text-neutral-50 hover:text-yellow-600">Annanya Senapati</p>
-                    <p class="text-sm  tracking-[0px] text-gray-300 ">billionar aunt</p>
+                    <p class="text-xl tracking-[1px] hover:tracking-[3px] text-neutral-50 hover:text-yellow-600">Kunal Patel</p>
+                    <p class="text-sm  tracking-[0px] text-gray-300 ">Animation Artist</p>
                 </div>
             </div >
             <div class="basis-[70%]"> <!-- lower -->
-                <p class="text-l text-gray-500 hover:text-gray-400 ">Yashika, a 4th sem student, is so passionate about development and coding that she can sit there coding for hours together. She forgets about everything when she is into her work. Would love to collaborate with her someday when I reach the same dedication point as her someday.</p>
-            </div>
-        </div>
-        <!-- CARD 4 -->
-        <div class=" flex flex-col p-[30px] border-gray-700 border-[1px] min-w-[400px] min-h-[300px] "> <!-- card -->
-            <div class="flex gap-[10px] basis-[30%] "> <!-- upper -->
-                <div class="rounded-full w-[60px] h-[60px] bg-[url('annanya.jpg')] bg-cover"> <!-- picture -->
-                </div>
-                <div> <!-- about person -->
-                    <p class="text-xl tracking-[1px] hover:tracking-[3px] text-neutral-50 hover:text-yellow-600">Annanya Senapati</p>
-                    <p class="text-sm  tracking-[0px] text-gray-300 ">billionar aunt</p>
-                </div>
-            </div >
-            <div class="basis-[70%]"> <!-- lower -->
-                <p class="text-l text-gray-500 hover:text-gray-400 ">Yashika, a 4th sem student, is so passionate about development and coding that she can sit there coding for hours together. She forgets about everything when she is into her work. Would love to collaborate with her someday when I reach the same dedication point as her someday.</p>
-            </div>
-        </div>
-        <!-- CARD 5 -->
-        <div class=" flex flex-col p-[30px] border-gray-700 border-[1px] min-w-[400px] min-h-[300px] "> <!-- card -->
-            <div class="flex gap-[10px] basis-[30%] "> <!-- upper -->
-                <div class="rounded-full w-[60px] h-[60px] bg-[url('annanya.jpg')] bg-cover"> <!-- picture -->
-                </div>
-                <div> <!-- about person -->
-                    <p class="text-xl tracking-[1px] hover:tracking-[3px] text-neutral-50 hover:text-yellow-600">Annanya Senapati</p>
-                    <p class="text-sm  tracking-[0px] text-gray-300 ">billionar aunt</p>
-                </div>
-            </div >
-            <div class="basis-[70%]"> <!-- lower -->
-                <p class="text-l text-gray-500 hover:text-gray-400 ">Yashika, a 4th sem student, is so passionate about development and coding that she can sit there coding for hours together. She forgets about everything when she is into her work. Would love to collaborate with her someday when I reach the same dedication point as her someday.</p>
+                <p class="text-l text-gray-500 hover:text-gray-400 ">She is very hardworking,exemplifies dedication, resilience, and excellence as a 4th semester student with a remarkable ability like web development and data structure to grasp complex concepts and apply them to practical challenges they have consistently demonstrated outstanding performance in coding skills.</p>
             </div>
         </div>
     </div>
 
     
-
-
-
     <!-- SAY HELLO -->
      <hr  style="border: 1px solid gray; margin:200px;">
     <div class="m-[100px] ">
@@ -269,7 +204,8 @@
                 <p class=" text-neutral-50 text-xl tracking-[3px] mb-[25px]">SOCIAL</p>
                 <span><a class=" text-gray-500  text-2xl leading-[40px]  hover:text-yellow-600" href="https://www.instagram.com/fameika.665314/" target="_blank">Instagram , </a></span>
                 <span><a class=" text-gray-500  text-2xl leading-[40px]  hover:text-yellow-600" href="https://www.linkedin.com/in/yashika-chaudhary-16782428b/" target="_blank">Linked-In , </a></span>
-                <span><a class=" text-gray-500  text-2xl leading-[40px]  hover:text-yellow-600" href="https://leetcode.com/u/yc8545908/" target="_blank">Leetcode  </a></span>
+                <span><a class=" text-gray-500  text-2xl leading-[40px]  hover:text-yellow-600" href="https://leetcode.com/u/yc8545908/" target="_blank">Leetcode , </a></span>
+                <span><a class=" text-gray-500  text-2xl leading-[40px]  hover:text-yellow-600" href="https://github.com/yc8545" target="_blank">GIT-HUB  </a></span>
             </div>
             <div class="basis-1/3 px-[20px]">
                 <button class=" text-yellow-600 hover:bg-neutral-50 hover:text-black w-[100%] h-[70px] bg-gray-700">SAY HELLO</button>
