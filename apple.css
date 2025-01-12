@@ -1,0 +1,9 @@
+.sc::-webkit-scrollbar{
+    display: none;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.ayo:hover + a{
+    h-fit;
+}
