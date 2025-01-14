@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="theme-color" content="#18181B">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MEET Yashika</title>
     <link rel="icon" type="image/png" href="favicon-16x16.png">
@@ -12,15 +13,18 @@
 <body class="bg-zinc-900 box-border p-0 m-0 overflow-x-hidden">
 
     <!-- NAV BAR  || POSITIONED ON THE TOP -->
-    <div  id="nav_bar" class="flex justify-center sticky top-0 z-[20]">
-        <div id="nav_bar1" class=" w-[80%] uppercase  text-xs  text-neutral-50 font-thin flex   gap-[150px] border-gray-700 p-[20px] border-[1px]  bg-zinc-900 ">
-            <div class="font-sans tracking-[3px] hover:text-yellow-600 hover:cursor-pointer">Chaudhary.</div>
-            <div class="font-sans tracking-[3px] hover:text-yellow-600 hover:cursor-pointer">Intro</div>
-            <div class="font-sans tracking-[3px] hover:text-yellow-600 hover:cursor-pointer">About</div>
-            <div class="font-sans tracking-[3px] hover:text-yellow-600 hover:cursor-pointer">Work</div>
-            <div class="font-sans tracking-[3px] hover:text-yellow-600 hover:cursor-pointer">Say Hello</div>
+      <div id="nav_bar" class="flex justify-center sticky top-0 z-[20]">
+        <div id="nav_bar1" class="w-[80%] uppercase text-xs text-neutral-50 font-thin flex gap-[150px] border-gray-700 p-[20px] border-[1px] bg-zinc-900">
+          <div class="font-sans tracking-[3px] hover:text-yellow-600 hover:cursor-pointer relative">
+            <span class="text t-f animate">CHAUDHARY</span>
+          </div>
+          <a class="font-sans tracking-[3px] hover:text-yellow-600 hover:cursor-pointer" href="#intro">INTRO</a>
+          <a class="font-sans tracking-[3px] hover:text-yellow-600 hover:cursor-pointer" href="#about">ABOUT</a>
+          <a class="font-sans tracking-[3px] hover:text-yellow-600 hover:cursor-pointer" href="#work">WORK</a>
+          <a class="font-sans tracking-[3px] hover:text-yellow-600 hover:cursor-pointer" href="#hello">SAY HELLO</a>
         </div>
-    </div>
+      </div>
+      
 
     <!-- INTRO -->
     <div id="intro" class="ml-[130px] mt-[80px]  ">
@@ -112,7 +116,7 @@
     
 
     <!-- recent works -->
-    <div class="m-[100px] ">
+    <div id="work" class="m-[100px] ">
         <div class="text-neutral-50 ">
             <p class="text-xl tracking-[3px] pt-[60px]  pr-[60px] pb-[60px] uppercase">Recent works</p>
             <p class="text-5xl font-serif font-bold tracking-normal leading-[60px]">Here are some of my favorite projects I have done lately. Feel free to check them out.</p>
@@ -189,7 +193,7 @@
     
     <!-- SAY HELLO -->
      <hr  style="border: 1px solid gray; margin:200px;">
-    <div class="m-[100px] ">
+    <div id="hello" class="m-[100px] ">
         <div class="text-neutral-50 ">
             <p class="text-xl tracking-[3px] pt-[60px]  pr-[60px] pb-[60px]">Get In Touch</p>
             <p class="text-5xl font-serif font-bold tracking-normal leading-[60px]">I love to hear from you. Whether you have a question or just want to chat about design, tech & art — shoot me a message.</p>
@@ -198,7 +202,7 @@
             <div class="basis-1/3 px-[20px]">
                 <p class=" text-neutral-50 text-xl tracking-[3px]  mb-[25px]">REACH ME AT</p>
                 <a class="text-gray-500 hover:text-yellow-600 text-2xl leading-[40px] " target="_blank" href="mailto:yc665314@gmail.com">yc665314.gmail.com</a>
-                <p class="text-gray-500 hover:text-yellow-600 text-2xl leading-[40px]  ">+91 7668562483</p>
+                <a class="text-gray-500 hover:text-yellow-600 text-2xl leading-[40px] " href="tel : +917668562483">7668562483</a>
             </div>
             <div class="basis-1/3 px-[20px]">
                 <p class=" text-neutral-50 text-xl tracking-[3px] mb-[25px]">SOCIAL</p>
@@ -208,6 +212,7 @@
                 <span><a class=" text-gray-500  text-2xl leading-[40px]  hover:text-yellow-600" href="https://github.com/yc8545" target="_blank">GIT-HUB  </a></span>
             </div>
             <div class="basis-1/3 px-[20px]">
+                <a href="tel : +917668562483 "> </a>
                 <button class=" text-yellow-600 hover:bg-neutral-50 hover:text-black w-[100%] h-[70px] bg-gray-700">SAY HELLO</button>
             </div>
         </div>
